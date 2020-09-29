@@ -1,7 +1,40 @@
 .bg-gray {
-	background-color: #eeeeee;
+	background-color: #b3b3b3 !important;
+	color: #000000 !important;
 }
 
 .bg-white {
-	background-color: #ffffff;
+	background-color: #ffffff !important;
+	color: #000000 !important;
+}
+
+.bg-yellow {
+	background-color: #f0b429 !important;
+	color: #000000 !important;
+}
+
+.bg-orange {
+	background-color: #f47920 !important;
+	color: #ffffff !important;
+}
+
+.bg-blue {
+	background-color: #005883 !important;
+	color: #ffffff !important;
+}
+
+.text-orange {
+	color: #f47920 !important;
+}
+
+.text-yellow {
+	color: #f0b429 !important;
+}
+
+.text-blue {
+	color: #005883 !important;
+}
+
+.text-white {
+	color: #ffffff !important;
 }
