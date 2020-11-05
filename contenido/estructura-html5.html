@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Curso Diseño Web | Estructura HTML5</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- <img src="https://informacion.unad.edu.co/images/acerca%20de%20la%20unad/simbolos/logo_vertical.png"
+                alt="Logo UNAD"> -->
+        </div>
+        <ul class="list-unstyled components mt-4">
+            <p class="text-center font-weight-bold">OVA Diseño Web</p>
+            <li>
+                <a href="#">Git & GitHub</a>
+            </li>
+            <li>
+                <a href="#estructuraHTML5" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Estructura HTML5</a>
+                <ul class="collapse list-unstyled" id="estructuraHTML5">
+                    <li>
+                        <a href="estructura-html5.html">Conceptos</a>
+                    </li>
+                    <li>
+                        <a href="../practicas.html">Prácticas</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contenido HTML5</a>
+            </li>
+            <li>
+                <a href="#">CSS Básico</a>
+            </li>
+            <li>
+                <a href="#">CSS3</a>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="../autor.html" class="article">Autor</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <!-- Page Content  -->
+        <div id="content" class="px-1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-yellow fixed-top p-1">
+                <div class="container-fluid">
+                    <div class="bg-white" id="sidebarCollapse">
+                        <img src="https://informacion.unad.edu.co/templates/unadgeneral/images/logoUNAD.png"
+                            alt="Logo UNAD">
+                    </div>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../recursos.html">Recursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../autoevaluacion.html">Autoevaluación</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row mt-5">
+                <article class="col-md-8 col-12 pl-5" id="contenido-tema">
+                    <h1 class="text-center">Estructura HTML5</h1>
+                    <p>
+                        Para aprender sobre la estructura de HTML5 de sus etiquetas y más, vamos a conocer un poco sobre
+                        ¿Qué es HTML?,¿Qué es HTML5? y ¿Cuáles son sus etiquetas o tags?
+                    </p>
+                    <div class="line"></div>
+                    <h4>¿Qué es HTML?</h4>
+                    <p>
+                        HTML (HyperText Markup Language) es el bloque de construcción más básico de la Web. Define el
+                        significado y la estructura del contenido web. <i>
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                Tomado de MDN Mozilla
+                            </a>
+                        </i>
+                    </p>
+                    <div class="line"></div>
+                    <h4>¿Qué es HTML5?</h4>
+                    <p>
+                        HTML5 es la última versión de HTML. El término representa dos conceptos diferentes:
+                    <ul>
+                        <li>Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.
+                        </li>
+                        <li>Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las
+                            aplicaciones
+                            ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo
+                            reducido a HTML5 .</li>
+                    </ul>
+                    <i>
+                        <a target="_blank" href="https://developer.mozilla.org/es/docs/HTML/HTML5">
+                            Tomado de MDN Mozilla
+                        </a>
+                    </i>
+                    </p>
+                    <div class="line"></div>
+                    <h4>¿Cuáles son sus etiquetas o tags?</h4>
+                    <p>
+                        Los tags o etiquetas son elementos que le dicen al navegador como debe formatear el texto para
+                        poder
+                        visualizarlo, teniendo en cuenta que en HTML5 se incluyeron nuevas etiquetas, puede conocerlas
+                        todas
+                        <a target="_blank"
+                            href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">aquí</a>.
+                    </p>
+                    <div class="line"></div>
+                    <h4>Estructura Tags HTML5</h4>
+                    <p>
+                        Las etiquetas cuentan con una estructura similar en todas, pero pueden diferir en algunos
+                        atributos.
+                        Existen dos tipos de etiquetas, las que tiene apertura - cierre y las que solo tienen apertura.
+                    </p>
+                    <p>
+                        Un ejemplo de etiqueta de apertura - cierre sería:<br>
+                        <code>
+                        &lt;p&gt;Texto&lt;/p&gt;
+                    </code><br>
+                        Donde podemos observar que tanto
+                        <code>
+                        &lt;p&gt;
+                    </code>
+                        como
+                        <code>
+                        &lt;/p&gt;
+                    </code>
+                        difieren en el <b>/</b>, el cual indica que es la etiqueta de cierre para el tag p de párrafos.
+                    </p>
+                    <p>
+                        Un ejemplo de etiqueta de sólo apertura sería:<br>
+                        <code>
+                        &lt;img&gt;
+                    </code><br>
+                        Donde podemos observar que no existe
+                        <code>
+                        &lt;/img&gt;
+                    </code>
+                        para indicar el cierre, pues esta etiqueta no la necesita para poder cargar una imagen en
+                        nuestra
+                        página web.
+                    </p>
+                    <div class="line"></div>
+                    <h4>Atributos y Valores</h4>
+                    <p>
+                        Todas las etiquetas tienen atributos y cada uno permite valores, para poder cargar texto,
+                        imágenes,
+                        videos, dar estilos y mucho más.
+                    </p>
+                    <p>
+                        Teniendo en cuenta esto, todas las etiquetas mantienen la misma estructura para formarse y poder
+                        cargar valores en sus atributos, de la siguiente manera:<br>
+                    </p>
+                    <p>
+                        Etiqueta de sólo apertura:
+                        <code>
+                        &lt;etiqueta atributo="valor"&gt;
+                    </code><br>
+                        Ejemplo:
+                        <code>
+                        &lt;img src="assets/img/mockup.png"&gt;
+                    </code>
+                    </p>
+                    <p>
+                        Etiqueta de apertura - cierre:
+                        <code>
+                        &lt;etiqueta atributo="valor"&gt;contenido&lt;/etiqueta&gt;
+                    </code><br>
+                        Ejemplo:
+                        <code>
+                        &lt;a href="https://www.google.com/"&gt;Ir a Google&lt;/a&gt;
+                    </code>
+                    </p>
+                </article>
+                <aside class="col-md-4 col-12">
+                    <a class="twitter-timeline" data-height="570"
+                        href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
